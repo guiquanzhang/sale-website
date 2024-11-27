@@ -1,0 +1,38 @@
+.registration-form {
+  width: 500px; /* 宽度增加到 500px，使整个注册表单区域更宽 */
+  margin: 100px auto; /* 上下外边距增大，让在页面中的位置更合适 */
+  padding: 40px; /* 内边距适当调整，让内部元素有更合适的间距 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px; /* 增大标题字体大小，使其更显眼 */
+  margin-bottom: 30px; /* 标题下方增加一些间距 */
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px; /* 标签下方间距适当增大 */
+  font-size: 16px; /* 增大标签字体大小 */
+}
+
+form input {
+  width: 100%; /* 输入框宽度改为占满父元素宽度，更适配不同屏幕尺寸 */
+  padding: 15px; /* 输入框内边距调整，使其看起来更大 */
+  margin-bottom: 20px; /* 输入框之间的间距增大 */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* 圆角半径适当增大，更美观 */
+  font-size: 16px; /* 输入框内文字字体大小增大 */
+}
+
+form input[type="submit"] {
+  background-color: #c81623;
+  color: white;
+  cursor: pointer;
+  padding: 12px 0; /* 按钮垂直方向增加一些内边距，使其更大更易点击 */
+  font-size: 18px; /* 增大按钮文字字体大小 */
+  border-radius: 5px; /* 按钮圆角半径和输入框统一，更美观 */
+}

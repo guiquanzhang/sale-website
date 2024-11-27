@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css"> <!-- 引入登录页面的样式表 -->
+  <link rel="shortcut icon" href="shoping/favicon.ico"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <title>品优购 - 登录</title>
+</head>
+
+<body>
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您! &nbsp;</li>
+                    <li>
+                        <a href="./login.html">请登录</a>
+                        <a href="./register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                </ul>
+            </div>
+        </div>
+     </section>
+  <!-- 登录页面主体容器 -->
+  <div class="login-container">
+    <!-- 页面标题 -->
+    <h2>品优购登录</h2>
+    <!-- 登录表单 -->
+    <form id="loginForm">
+      <!-- 用户名输入框 -->
+      <label for="username">用户名：</label>
+      <input type="text" id="username" placeholder="请输入用户名" required><br>
+
+      <!-- 密码输入框 -->
+      <label for="password">密码：</label>
+      <input type="password" id="password" placeholder="请输入密码" required><br>
+
+      <!-- 登录按钮 -->
+      <input type="submit" value="登录">
+      <!-- 忘记密码、注册等链接（可按需添加更多功能链接） -->
+      <div class="link-section">
+        <a href="#">忘记密码？</a>
+        <a href="register.html">还没有账号？立即注册</a>
+      </div>
+    </form>
+  </div>
+  <script src="script_login.js"></script> <!-- 引入登录页面的脚本文件 -->
+</body>
+
+</html>
