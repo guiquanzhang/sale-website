@@ -20,8 +20,8 @@
 .fr {
     float: right;
 }
-.style_red {
-    color: #c81623;
+.style_red:hover {
+    color: skyblue;
 }
 .shortcut {
     height: 32px;
@@ -56,7 +56,7 @@
 }
 .logo a {
     display: block;
-    width: 171px;
+    width: 250px;
     height: 61px;
     background: url(../images/logo.png) no-repeat;
     /* font-size: 0; */
@@ -70,7 +70,7 @@
     left: 346px;
     width: 538px;
     height: 36px;
-    border: 2px solid #b1191a ;
+    border: 2px solid skyblue ;
 }
 .search input {
     float: left;
@@ -82,7 +82,7 @@
     float: left;
     width: 80px;
     height: 32px;
-    background-color: #b1191a;
+    background-color: skyblue;
     font-size: 16px;
     color: #fff;
 }
@@ -109,7 +109,7 @@
     content: '\e93a';
     font-family: 'icomoon';
     margin-right: 5px;
-    color: #b1191a;
+    color: skyblue;
 }
 .shopcar::after {
     content: '\e920';
@@ -129,13 +129,13 @@
 }
 .nav {
     height: 47px;
-    border-bottom: 2px solid #b1191a;
+    border-bottom: 2px solid skyblue;
 }
 .nav .dropdown {
      float: left;
      width: 210px;
      height: 45px;
-     background-color: #b1191a;
+     background-color: skyblue;
 }
 .nav .navitems {
     float: left;
@@ -149,10 +149,10 @@
     font-size: 16px;
 }
 .dropdown .dd {
-    display: none;
+
     width: 210px;
     height: 465px;
-    background-color: #c81623;
+    background-color: skyblue;
     margin-top: 2px;
     
 }
@@ -179,7 +179,7 @@
     color: #fff;
 }
 .dropdown .dd ul li:hover a {
-    color: #c81623;
+    color: skyblue;
 }
 .navitems ul li {
     float: left;
@@ -266,5 +266,12 @@
 .mod_help dl dt {
     font-size: 16px;
     margin-bottom: 10px;
+}
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+.links {
+    margin-bottom: 15px;
 }
 
