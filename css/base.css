@@ -33,7 +33,10 @@ a {
 }
 
 a:hover {
-    color: #c81623
+    /* color: #c81623; */
+    /* height: 50px; */
+    color: #fff;
+    background-color: rgba(137, 208, 237, 0.5);
 }
 
 button,
@@ -67,5 +70,5 @@ body {
 }
 
 .clearfix {
-    *zoom: 1
+    *zoom: 1;
 }
