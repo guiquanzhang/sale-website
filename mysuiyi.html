@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的随意买</title>
+    <link rel="shortcut icon" href="shoping/favicon.ico" />
+    <link rel="stylesheet" href="css/mysuiyi.css">
+</head>
+
+<body>
+    <!-- 页面头部，包含返回按钮和页面标题 -->
+    <header class="page-header">
+        <a href="index.html" class="back-btn">&lt; 返回首页</a>
+        <h1>我的随意买</h1>
+    </header>
+
+    <!-- 用户信息展示区域 -->
+    <section class="user-info-section">
+        <div class="user-avatar">
+            <img src="images/default_avatar.jpg" alt="用户头像">
+        </div>
+        <div class="user-details">
+            <h2>[用户名]</h2>
+            <p>会员等级：[具体等级]</p>
+            <p>注册时间：[注册日期]</p>
+        </div>
+    </section>
+
+    <!-- 常用功能模块，例如收藏、足迹、优惠券等 -->
+    <section class="feature-section">
+        <div class="feature-item">
+            <a href="#">
+                <img src="images/collection_icon.png" alt="收藏图标">
+                <span>我的收藏</span>
+            </a>
+        </div>
+        <div class="feature-item">
+            <a href="#">
+                <img src="images/browse_history_icon.png" alt="浏览足迹图标">
+                <span>浏览足迹</span>
+            </a>
+        </div>
+        <div class="feature-item">
+            <a href="#">
+                <img src="images/coupon_icon.png" alt="优惠券图标">
+                <span>我的优惠券</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 订单状态统计模块，简单示例展示不同状态订单数量 -->
+    <section class="order-status-section">
+        <h2>我的订单状态</h2>
+        <div class="order-status-item">
+            <span class="status-label">待付款</span>
+            <span class="status-count">3</span>
+        </div>
+        <div class="order-status-item">
+            <span class="status-label">待发货</span>
+            <span class="status-count">2</span>
+        </div>
+        <div class="order-status-item">
+            <span class="status-label">已发货</span>
+            <span class="status-count">5</span>
+        </div>
+        <div class="order-status-item">
+            <span class="status-label">已完成</span>
+            <span class="status-count">10</span>
+        </div>
+    </section>
+
+    <!-- 最近浏览商品模块，可根据实际从后端获取数据动态生成 -->
+    <section class="recently-viewed-section">
+        <h2>最近浏览商品</h2>
+        <div class="product-item">
+            <img src="images/product1.jpg" alt="商品1图片">
+            <h3>商品名称1</h3>
+            <p>商品描述1</p>
+            <a href="#" class="view-detail-btn">查看详情</a>
+        </div>
+        <div class="product-item">
+            <img src="images/product2.jpg" alt="商品2图片">
+            <h3>商品名称2</h3>
+            <p>商品描述2</p>
+            <a href="#" class="view-detail-btn">查看详情</a>
+        </div>
+        <!-- 可添加更多商品展示项 -->
+    </section>
+
+    <!-- 页面底部 -->
+    <footer class="page-footer">
+        <p>&copy; 2024 随意买有限公司. 版权所有</p>
+        <ul class="footer-links">
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">服务条款</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
