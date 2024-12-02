@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的订单 - 随意买</title>
+    <!-- <link rel="shortcut icon" href="shoping/favicon.ico" /> -->
+    <link rel="stylesheet" href="css/order.css"> <!-- 新的专门用于此页面的样式表 -->
+</head>
+
+<body>
+    <!-- 顶部标题栏模块 start -->
+    <div class="top-bar">
+        <div class="container">
+            <h1 class="page-title">我的订单</h1>
+            <div class="user-info">
+                <span>欢迎回来，[用户名]</span>
+                <a href="./index.html">返回首页</a>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部标题栏模块 end -->
+
+    <!-- 订单筛选与搜索模块 start -->
+    <div class="order-filter-search">
+        <div class="container">
+            <form action="#">
+                <input type="text" placeholder="搜索订单" class="search-input">
+                <select name="order-status" class="status-select">
+                    <option value="all">全部状态</option>
+                    <option value="pending">待付款</option>
+                    <option value="shipped">已发货</option>
+                    <option value="completed">已完成</option>
+                    <option value="cancelled">已取消</option>
+                </select>
+                <button type="submit" class="filter-search-btn">筛选/搜索</button>
+            </form>
+        </div>
+    </div>
+    <!-- 订单筛选与搜索模块 end -->
+
+    <!-- 订单列表模块 start -->
+    <div class="order-list-section">
+        <div class="container">
+            <ul class="order-list">
+                <!-- 示例订单项 -->
+                <li class="order-item">
+                    <div class="order-item-header">
+                        <span class="order-id">#123456</span>
+                        <span class="order-date">2024-12-01</span>
+                    </div>
+                    <div class="order-item-body">
+                        <img src="images/product_placeholder.jpg" alt="商品图片" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">联想笔记本电脑</h3>
+                            <p class="product-description">配置详情：英特尔酷睿i7处理器，16GB内存，512GB固态硬盘</p>
+                            <p class="product-quantity">数量：1</p>
+                            <p class="product-price">价格：￥5999</p>
+                        </div>
+                    </div>
+                    <div class="order-item-footer">
+                        <span class="order-status-tag status-pending">待付款</span>
+                        <div class="order-actions">
+                            <button class="action-btn view-btn">查看详情</button>
+                            <button class="action-btn pay-btn">付款</button>
+                            <button class="action-btn cancel-btn">取消订单</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="order-item">
+                    <div class="order-item-header">
+                        <span class="order-id">#789012</span>
+                        <span class="order-date">2024-12-02</span>
+                    </div>
+                    <div class="order-item-body">
+                        <img src="images/product_placeholder.jpg" alt="商品图片" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">华为手机</h3>
+                            <p class="product-description">型号：华为P60，8GB内存，256GB存储</p>
+                            <p class="product-quantity">数量：1</p>
+                            <p class="product-price">价格：￥6999</p>
+                        </div>
+                    </div>
+                    <div class="order-item-footer">
+                        <span class="order-status-tag status-shipped">已发货</span>
+                        <div class="order-actions">
+                            <button class="action-btn view-btn">查看详情</button>
+                            <button class="action-btn track-btn">查看物流</button>
+                            <button class="action-btn return-btn">申请退货</button>
+                        </div>
+                    </div>
+                </li>
+                <!-- 可根据实际情况添加更多订单项 -->
+            </ul>
+        </div>
+    </div>
+    <!-- 订单列表模块 end -->
+
+    <!-- 分页导航模块 start -->
+    <div class="pagination">
+        <div class="container">
+            <ul class="pagination-list">
+                <li class="page-item"><a href="#" class="page-link">&laquo; 上一页</a></li>
+                <li class="page-item"><a href="#" class="page-link active">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                <li class="page-item"><a href="#" class="page-link">&raquo; 下一页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 分页导航模块 end -->
+
+    <!-- 底部版权信息模块 start -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 随意买有限公司. 版权所有</p>
+            <ul class="footer-links">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">服务条款</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部版权信息模块 end -->
+</body>
+
+</html>
