@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/carouselmap.css">
 </head>
 <body>
     <!-- 快捷导航模块 start-->
@@ -16,7 +17,6 @@
             <div class="fl">
                 <ul>
                     <li>随意买欢迎您! &nbsp;</li>
-                    <li>
                         <a href="./login.html" class="style_red">请登录</a>
                         <a href="./register.html" class="style_red">免费注册</a>
                     </li>
@@ -114,11 +114,23 @@
         </div>
        </nav>
        <!-- nav模块制作end -->
-       <!--首页模块start-->
-       <div class="w">
-        <div class="main">abc</div>
-       </div>
-       <!--首页模块end-->
+  <!--首页模块start-->
+<div class="w">
+    <div class="main">
+        <body>
+            <div class="carousel">
+              <img src="images/lbt1.jpg" alt="图片1" class="carousel-image active">
+              <img src="images/lbt2.jpg" alt="图片2" class="carousel-image">
+              <img src="images/lbt3.jpg" alt="图片3" class="carousel-image">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          
+            <script src="js/carouselmap.js"></script>
+          </body>
+    </div>
+</div>
+<!--首页模块end-->
      <!-- footer模块制作start -->
       <footer class="footer">
         <div class="w">
