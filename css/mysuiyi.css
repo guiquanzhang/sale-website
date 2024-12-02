@@ -1,0 +1,210 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.page-header {
+    background-color: skyblue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header .back-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.page-header .back-btn:hover {
+    text-decoration: underline;
+}
+
+.page-header h1 {
+    font-size: 24px;
+}
+
+/* 用户信息展示区域样式 */
+.user-info-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.user-details p {
+    color: #666;
+}
+
+/* 常用功能模块样式 */
+.feature-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-item span {
+    font-size: 16px;
+}
+
+/* 订单状态统计模块样式 */
+.order-status-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-status-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.order-status-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status-label {
+    font-weight: bold;
+}
+
+.status-count {
+    color: skyblue;
+}
+
+/* 最近浏览商品模块样式 */
+.recently-viewed-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recently-viewed-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.view-detail-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-detail-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 页面底部样式 */
+.page-footer {
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-footer .footer-links {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.page-footer .footer-links li {
+    margin: 0 10px;
+}
+
+.page-footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.page-footer .footer-links a:hover {
+    text-decoration: underline;
+}

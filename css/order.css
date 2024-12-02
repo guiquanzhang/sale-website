@@ -1,0 +1,334 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* 通用容器类，用于控制页面各部分宽度及水平居中 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 顶部标题栏模块样式 */
+.top-bar {
+    background-color: skyblue;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .page-title {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.top-bar .user-info {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.top-bar .user-info span {
+    margin-right: 10px;
+}
+
+.top-bar .user-info a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease; /* 添加过渡效果，使鼠标悬停时更平滑 */
+}
+
+.top-bar .user-info a:hover {
+    text-decoration: underline;
+}
+
+/* 订单筛选与搜索模块样式 */
+.order-filter-search {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid skyblue; /* 添加底部边框与整体配色呼应 */
+}
+
+.order-filter-search form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-filter-search .search-input {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid skyblue; /* 输入框边框颜色采用天蓝色 */
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* 输入框获取焦点时边框变色过渡效果 */
+}
+
+.order-filter-search .search-input:focus {
+    border-color: #0056b3; /* 输入框获取焦点时加深的天蓝色 */
+}
+
+.order-filter-search .status-select {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    appearance: none; /* 去除默认下拉箭头样式 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23007bff" width="16" height="16"><path d="M7 10l5 5 5-5z"/></svg>'); /* 添加自定义下拉箭头图标，颜色为天蓝色 */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 12px;
+    cursor: pointer;
+    transition: border-color 0.3s ease; /* 下拉框获取焦点时边框变色过渡效果 */
+}
+
+.order-filter-search .status-select:focus {
+    border-color: #0056b3;
+}
+
+.order-filter-search .filter-search-btn {
+    height: 40px;
+    padding: 0 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 按钮悬停时背景色过渡效果 */
+}
+
+.order-filter-search .filter-search-btn:hover {
+    background-color: #0056b3; /* 按钮悬停时加深的天蓝色 */
+}
+
+/* 订单列表模块样式 */
+.order-list-section {
+    background-color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-list {
+    list-style: none;
+}
+
+.order-item {
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease; /* 订单项鼠标悬停时阴影变化过渡效果 */
+}
+
+.order-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.order-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-id {
+    font-weight: bold;
+}
+
+.order-date {
+    color: #666;
+}
+
+.order-item-body {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid skyblue; /* 商品图片添加天蓝色边框 */
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-quantity {
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: skyblue;
+}
+
+.order-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-status-tag {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.status-pending {
+    background-color: skyblue;
+}
+
+.status-shipped {
+    background-color: #28a745;
+}
+
+.order-actions button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 按钮悬停时背景色过渡效果 */
+}
+
+.view-btn {
+    background-color: skyblue;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #0056b3;
+}
+
+.pay-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.pay-btn:hover {
+    background-color: #1e7e34;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+.track-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.track-btn:hover {
+    background-color: #138496;
+}
+
+.return-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.return-btn:hover {
+    background-color: #5a6268;
+}
+
+/* 分页导航模块样式 */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-list {
+    list-style: none;
+    display: inline-flex;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* 分页链接悬停时多种样式变化过渡效果 */
+}
+
+.page-link:hover {
+    background-color: skyblue;
+    color: white;
+    border-color: skyblue;
+}
+
+.page-link.active {
+    background-color: skyblue;
+    color: white;
+    border-color: skyblue;
+}
+
+/* 底部版权信息模块样式 */
+.footer {
+    background-color: skyblue;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* 版权信息链接悬停时添加下划线过渡效果 */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
