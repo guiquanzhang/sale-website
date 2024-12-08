@@ -1,0 +1,318 @@
+/* 企业采购页面整体通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* 使用线性渐变创建更有层次感的skyblue背景 */
+    background: linear-gradient(to bottom right, white, #E0FFFF);
+    color: black;
+    /* 添加过渡效果，让背景颜色变化更平滑（当页面有背景色改变的交互时） */
+    transition: background 0.5s ease;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 页面头部样式 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景，与渐变背景融合更好 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影，增加层次感 */
+    transition: background-color 0.3s ease; /* 过渡效果，背景色变化更平滑 */
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    transition: color 0.3s ease; /* 文字颜色过渡效果 */
+}
+
+.header:hover.logo a {
+    color: #87CEEB; /* 鼠标悬停在头部时，logo文字变色 */
+}
+
+.search-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search input {
+    border: none;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    transition: box-shadow 0.3s ease; /* 输入框阴影过渡效果 */
+}
+
+.search input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 输入框获取焦点时添加阴影 */
+}
+
+.search-btn {
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease; /* 搜索按钮背景色过渡效果 */
+}
+
+.search-btn:hover {
+    background-color: #6495ED; /* 鼠标悬停时按钮背景色变化 */
+}
+
+/* 主要内容区域通用样式 */
+.enterprise-main {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    transition: color 0.3s ease; /* 标题文字颜色过渡效果 */
+}
+
+.section-title:hover {
+    color: #6495ED; /* 鼠标悬停在标题上时文字变色 */
+}
+
+/* 商品分类区域样式 */
+.category-section {
+    margin-bottom: 60px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.category-item {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 分类项的缩放和阴影过渡效果 */
+}
+
+.category-item:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上稍微移动 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 鼠标悬停时阴影加深 */
+}
+
+.category-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* 图片缩放过渡效果 */
+}
+
+.category-item:hover.category-img {
+    transform: scale(1.1); /* 鼠标悬停在分类项上时图片稍微放大 */
+}
+
+.category-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease; /* 分类名称文字颜色过渡效果 */
+}
+
+.category-item:hover.category-name {
+    color: #6495ED; /* 鼠标悬停时分类名称文字变色 */
+}
+
+.category-desc {
+    color: #666;
+}
+
+/* 采购流程区域样式 */
+.process-section {
+    margin-bottom: 60px;
+}
+
+.process-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    background-color: #87CEEB;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 15px;
+    transition: background-color 0.3s ease; /* 步骤序号背景色过渡效果 */
+}
+
+.process-step:hover.step-number {
+    background-color: #6495ED; /* 鼠标悬停在步骤上时序号背景色变化 */
+}
+
+.step-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease; /* 步骤标题文字颜色过渡效果 */
+}
+
+.process-step:hover.step-title {
+    color: #6495ED; /* 鼠标悬停在步骤上时标题文字变色 */
+}
+
+.step-desc {
+    color: #666;
+}
+
+/* 服务保障区域样式 */
+.guarantee-section {
+    margin-bottom: 60px;
+}
+
+.guarantee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.guarantee-item {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 保障项的缩放和阴影过渡效果 */
+}
+
+.guarantee-item:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上稍微移动 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 鼠标悬停时阴影加深 */
+}
+
+.guarantee-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* 保障项图片缩放过渡效果 */
+}
+
+.guarantee-item:hover.guarantee-img {
+    transform: scale(1.1); /* 鼠标悬停在保障项上时图片稍微放大 */
+}
+
+.guarantee-name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease; /* 保障名称文字颜色过渡效果 */
+}
+
+.guarantee-item:hover.guarantee-name {
+    color: #6495ED; /* 鼠标悬停时保障名称文字变色 */
+}
+
+.guarantee-desc {
+    color: #666;
+}
+
+/* 常见问题区域样式 */
+.faq-section {
+    margin-bottom: 60px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* 问题文字颜色过渡效果 */
+}
+
+.faq-item:hover.question {
+    color: #6495ED; /* 鼠标悬停在问题上时文字变色 */
+}
+
+.answer {
+    color: #666;
+}
+
+/* 页面底部样式，复用原footer相关样式 */
+.footer {
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景，与整体融合 */
+    color: black;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影，增加层次感 */
+    transition: background-color 0.3s ease; /* 背景色过渡效果 */
+}
+
+.footer:hover {
+    background-color: white; /* 鼠标悬停在底部时背景色变为完全白色 */
+}
+
+.footer.mod_service ul li h5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer.mod_service ul li.service_txt h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer.mod_service ul li.service_txt p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer.mod_help dl dd {
+    margin-bottom: 5px;
+}
+
+.footer.mod_copyright.links {
+    margin-bottom: 10px;
+}
+
+.footer.mod_copyright.copyright {
+    font-size: 14px;
+}

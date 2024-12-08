@@ -5,6 +5,9 @@
     /* css3盒子模型 */
     box-sizing: border-box;
 }
+body {
+    background-color: gray;
+}
 /* em 和 i 斜体的文字不倾斜 */
 em,
 i {
@@ -32,12 +35,6 @@ a {
     text-decoration: none
 }
 
-a:hover {
-    /* color: #c81623; */
-    /* height: 50px; */
-    color: #fff;
-    background-color: rgba(137, 208, 237, 0.5);
-}
 
 button,
 input {
