@@ -1,4 +1,3 @@
-/* 全局样式重置 */
 * {
     margin: 0;
     padding: 0;
@@ -26,28 +25,33 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.top-bar .page-title {
+.top-bar.page-title {
     font-size: 28px;
     margin-left: 10px;
 }
 
-.top-bar .user-info {
+.top-bar.user-info {
     text-align: right;
     margin-right: 10px;
 }
 
-.top-bar .user-info span {
+.top-bar.user-info span {
     margin-right: 10px;
 }
 
-.top-bar .user-info a {
+.back-button {
+    background-color: skyblue;
     color: white;
-    text-decoration: none;
-    transition: all 0.3s ease; /* 添加过渡效果，使鼠标悬停时更平滑 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.top-bar .user-info a:hover {
-    text-decoration: underline;
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 /* 订单筛选与搜索模块样式 */
@@ -55,7 +59,7 @@ body {
     background-color: white;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid skyblue; /* 添加底部边框与整体配色呼应 */
+    border-bottom: 2px solid skyblue;
 }
 
 .order-filter-search form {
@@ -64,42 +68,42 @@ body {
     align-items: center;
 }
 
-.order-filter-search .search-input {
+.order-filter-search.search-input {
     width: 300px;
     height: 40px;
     padding: 0 10px;
-    border: 1px solid skyblue; /* 输入框边框颜色采用天蓝色 */
+    border: 1px solid skyblue;
     border-radius: 4px;
-    transition: border-color 0.3s ease; /* 输入框获取焦点时边框变色过渡效果 */
+    transition: border-color 0.3s ease;
 }
 
-.order-filter-search .search-input:focus {
-    border-color: #0056b3; /* 输入框获取焦点时加深的天蓝色 */
+.order-filter-search.search-input:focus {
+    border-color: #0056b3;
 }
 
-.order-filter-search .status-select {
+.order-filter-search.status-select {
     height: 40px;
     padding: 0 10px;
     border: 1px solid skyblue;
     border-radius: 4px;
     background-color: white;
     color: #333;
-    appearance: none; /* 去除默认下拉箭头样式 */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23007bff" width="16" height="16"><path d="M7 10l5 5 5-5z"/></svg>'); /* 添加自定义下拉箭头图标，颜色为天蓝色 */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23007bff" width="16" height="16"><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 12px 12px;
     cursor: pointer;
-    transition: border-color 0.3s ease; /* 下拉框获取焦点时边框变色过渡效果 */
+    transition: border-color 0.3s ease;
 }
 
-.order-filter-search .status-select:focus {
+.order-filter-search.status-select:focus {
     border-color: #0056b3;
 }
 
-.order-filter-search .filter-search-btn {
+.order-filter-search.filter-search-btn {
     height: 40px;
     padding: 0 20px;
     background-color: skyblue;
@@ -107,11 +111,11 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* 按钮悬停时背景色过渡效果 */
+    transition: background-color 0.3s ease;
 }
 
-.order-filter-search .filter-search-btn:hover {
-    background-color: #0056b3; /* 按钮悬停时加深的天蓝色 */
+.order-filter-search.filter-search-btn:hover {
+    background-color: #0056b3;
 }
 
 /* 订单列表模块样式 */
@@ -133,7 +137,7 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s ease; /* 订单项鼠标悬停时阴影变化过渡效果 */
+    transition: box-shadow 0.3s ease;
 }
 
 .order-item:hover {
@@ -166,7 +170,7 @@ body {
     margin-right: 15px;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid skyblue; /* 商品图片添加天蓝色边框 */
+    border: 1px solid skyblue;
 }
 
 .product-info {
@@ -219,7 +223,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* 按钮悬停时背景色过渡效果 */
+    transition: background-color 0.3s ease;
 }
 
 .view-btn {
@@ -289,7 +293,7 @@ body {
     border-radius: 4px;
     text-decoration: none;
     color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* 分页链接悬停时多种样式变化过渡效果 */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .page-link:hover {
@@ -326,7 +330,7 @@ body {
 .footer-links a {
     color: white;
     text-decoration: none;
-    transition: text-decoration 0.3s ease; /* 版权信息链接悬停时添加下划线过渡效果 */
+    transition: text-decoration 0.3s ease;
 }
 
 .footer-links a:hover {

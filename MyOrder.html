@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的订单 - 随意买</title>
     <!-- <link rel="shortcut icon" href="shoping/favicon.ico" /> -->
-    <link rel="stylesheet" href="css/order.css"> <!-- 新的专门用于此页面的样式表 -->
+    <link rel="stylesheet" href="css/order.css">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         <div class="container">
             <h1 class="page-title">我的订单</h1>
             <div class="user-info">
-                <span>欢迎回来，[用户名]</span>
-                <a href="./index.html">返回首页</a>
+                <span>欢迎回来，主人</span>
+                <button id="back-btn" class="back-button">返回首页</button>
             </div>
         </div>
     </div>
@@ -26,15 +26,15 @@
     <div class="order-filter-search">
         <div class="container">
             <form action="#">
-                <input type="text" placeholder="搜索订单" class="search-input">
-                <select name="order-status" class="status-select">
+                <input type="text" placeholder="搜索订单" class="search-input" id="search-input">
+                <select name="order-status" class="status-select" id="status-select">
                     <option value="all">全部状态</option>
                     <option value="pending">待付款</option>
                     <option value="shipped">已发货</option>
                     <option value="completed">已完成</option>
                     <option value="cancelled">已取消</option>
                 </select>
-                <button type="submit" class="filter-search-btn">筛选/搜索</button>
+                <button type="submit" class="filter-search-btn" id="filter-search-btn">筛选/搜索</button>
             </form>
         </div>
     </div>
@@ -43,7 +43,7 @@
     <!-- 订单列表模块 start -->
     <div class="order-list-section">
         <div class="container">
-            <ul class="order-list">
+            <ul class="order-list" id="order-list">
                 <!-- 示例订单项 -->
                 <li class="order-item">
                     <div class="order-item-header">
@@ -126,6 +126,8 @@
         </div>
     </div>
     <!-- 底部版权信息模块 end -->
+
+    <script src="js/myorder.js"></script>
 </body>
 
 </html>

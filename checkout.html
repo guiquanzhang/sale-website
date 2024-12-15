@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/checkout.css">
+  <title>Shopping Cart Checkout</title>
+</head>
+
+<body>
+  <header>
+    <h1>购物车结算</h1>
+  </header>
+  <main>
+    <section class="cart-items">
+        <h2>购物车商品</h2>
+        <div class="item" data-price="5999">
+          <img src="images/联想笔记本电脑.jpg" alt="商品1图片">
+          <div class="item-details">
+            <p class="item-name">联想笔记本电脑</p>
+            <p class="item-description">这是一款很棒的商品1描述</p>
+            <input type="number" value="1" min="1" class="quantity">
+          </div>
+          <p class="item-price">￥5999</p>
+        </div>
+
+      </section>
+    </section>
+    <section class="summary">
+      <h2>订单汇总</h2>
+      <p>商品总价：<span id="subtotal">￥5999</span></p>
+      <p>运费：<span id="shipping">￥10</span></p>
+      <p>总计：<span id="total">￥6009</span></p>
+    </section>
+    <section class="address">
+      <h2>收货地址</h2>
+      <input type="text" placeholder="请输入收货人姓名" id="name">
+      <input type="text" placeholder="请输入收货地址" id="address">
+      <input type="text" placeholder="请输入联系电话" id="phone">
+    </section>
+
+    <button id="back-btn">返回上一步操作</button>
+    <button id="home-btn">回到首页</button>
+    <button id="checkout-btn">提交订单</button>
+  </main>
+  <script src="js/checkout.js"></script>
+</body>
+
+</html>

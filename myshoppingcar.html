@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" width="device-width" initial-scale="1.0">
+  <link rel="stylesheet" href="css/myshoppingcar.css">
+  <title>随意买 - 购物车</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>随意买购物车</h1>
+      <nav>
+        <button class="back-to-home-btn">返回首页</button>
+        <button class="view-profile-btn">查看个人信息</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="images/联想笔记本电脑.jpg" alt="商品图片">
+        <div class="item-details">
+          <h2>商品名称1</h2>
+          <p>价格：￥5999</p>
+          <input type="number" value="1" min="1" class="quantity-input">
+        </div>
+        <button class="remove-item-btn">移除商品</button>
+      </div>
+      <!-- 可以按照需要复制更多的cart-item元素来模拟多个商品 -->
+    </div>
+    <div class="cart-summary">
+      <p>总价：￥<span id="total-price">0.00</span></p>
+      <button class="checkout-btn">去结算</button>
+    </div>
+  </main>
+  <script src="js/myshoppingcar.js"></script>
+</body>
+
+</html>
