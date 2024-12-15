@@ -1,0 +1,154 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.header {
+    background-color: #00BFFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* 全球购导航栏样式 */
+.global-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.global-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.global-nav ul li {
+    padding: 0 15px;
+}
+
+.global-nav ul li a {
+    text-decoration: none;
+    color: #00BFFF;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.global-nav ul li a:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+}
+
+/* 热门国家地区商品展示区样式 */
+.country-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.country-item {
+    width: 300px;
+    border: 1px solid #00BFFF;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.country-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.country-item h2 {
+    margin-bottom: 10px;
+    color: #00BFFF;
+}
+
+.product-card {
+    margin-bottom: 15px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 海淘攻略区样式 */
+.shopping-guide {
+    padding: 20px;
+    border-top: 1px solid #00BFFF;
+    border-bottom: 1px solid #00BFFF;
+    margin: 20px 0;
+}
+
+.shopping-guide h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #00BFFF;
+}
+
+.shopping-guide ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.shopping-guide ul li {
+    margin-bottom: 5px;
+}
+
+/* 页面底部样式 */
+.footer {
+    background-color: #00BFFF;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .mod_service ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .mod_service ul li {
+    text-align: center;
+}
+
+.footer .mod_service ul li h5 {
+    margin-bottom: 5px;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 10px;
+}

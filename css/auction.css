@@ -1,0 +1,168 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.header {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* 拍卖导航栏样式 */
+.auction-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.auction-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.auction-nav ul li {
+    padding: 0 15px;
+}
+
+.auction-nav ul li a {
+    text-decoration: none;
+    color: #8A2BE2;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.auction-nav ul li a:hover {
+    text-decoration: underline;
+    color: #4B0082;
+}
+
+/* 拍卖商品展示区样式 */
+.auction-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item {
+    width: 300px;
+    border: 1px solid #8A2BE2;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item .current-price {
+    font-size: 18px;
+    color: #8A2BE2;
+    margin-bottom: 10px;
+}
+
+.item .bidder-count {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item .bidder-count .count {
+    color: #8A2BE2;
+    font-weight: bold;
+}
+
+.item .auction-time-left {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 拍卖公告区样式 */
+.auction-notice {
+    padding: 20px;
+    border-top: 1px solid #8A2BE2;
+    border-bottom: 1px solid #8A2BE2;
+    margin: 20px 0;
+}
+
+.auction-notice h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #8A2BE2;
+}
+
+.auction-notice ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.auction-notice ul li {
+    margin-bottom: 5px;
+}
+
+/* 页面底部样式 */
+.footer {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .mod_service ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .mod_service ul li {
+    text-align: center;
+}
+
+.footer .mod_service ul li h5 {
+    margin-bottom: 5px;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 10px;
+}

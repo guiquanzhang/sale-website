@@ -1,0 +1,136 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.header {
+    background-color: pink;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.header .logo a:hover {
+    text-decoration: underline;
+}
+
+.header .logo a .logo-text {
+    font-weight: bold;
+}
+
+.header .logo a .current-page {
+    font-weight: normal;
+}
+
+/* 美妆馆导航栏样式 */
+.beauty-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.beauty-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.beauty-nav ul li {
+    padding: 0 15px;
+}
+
+.beauty-nav ul li a {
+    text-decoration: none;
+    color: pink;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.beauty-nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff69b4;
+}
+
+/* 热门美妆产品展示区样式 */
+.beauty-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    width: 300px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 页面底部样式 */
+.footer {
+    background-color: pink;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .mod_service ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .mod_service ul li {
+    text-align: center;
+}
+
+.footer .mod_service ul li h5 {
+    margin-bottom: 5px;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 10px;
+}

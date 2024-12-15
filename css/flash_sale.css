@@ -1,0 +1,164 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.header {
+    background-color: #FF6347;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* 闪购导航栏样式 */
+.flash-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.flash-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flash-nav ul li {
+    padding: 0 15px;
+}
+
+.flash-nav ul li a {
+    text-decoration: none;
+    color: #FF6347;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.flash-nav ul li a:hover {
+    text-decoration: underline;
+    color: #FF4500;
+}
+
+/* 闪购商品展示区样式 */
+.flash-sale-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    width: 300px;
+    border: 1px solid #FF6347;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-item .price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.product-item .discount-price {
+    color: #FF6347;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.countdown {
+    margin-top: 10px;
+    color: #FF6347;
+    font-size: 16px;
+}
+
+/* 闪购规则说明区样式 */
+.flash-sale-rules {
+    padding: 20px;
+    border-top: 1px solid #FF6347;
+    border-bottom: 1px solid #FF6347;
+    margin: 20px 0;
+}
+
+.flash-sale-rules h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FF6347;
+}
+
+.flash-sale-rules ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.flash-sale-rules ul li {
+    margin-bottom: 5px;
+}
+
+/* 页面底部样式 */
+.footer {
+    background-color: #FF6347;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .mod_service ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .mod_service ul li {
+    text-align: center;
+}
+
+.footer .mod_service ul li h5 {
+    margin-bottom: 5px;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 10px;
+}

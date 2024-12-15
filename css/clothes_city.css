@@ -1,0 +1,137 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.header {
+    background-color: skyblue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* 服装城导航栏样式 */
+.clothes-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.clothes-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clothes-nav ul li {
+    padding: 0 15px;
+}
+
+.clothes-nav ul li a {
+    text-decoration: none;
+    color: skyblue;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.clothes-nav ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* 服装分类展示区样式 */
+.clothes-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category-item {
+    width: 300px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.category-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.category-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.view-details-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 页面底部样式 */
+.footer {
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .mod_service ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .mod_service ul li {
+    text-align: center;
+}
+
+.footer .mod_service ul li h5 {
+    margin-bottom: 5px;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 10px;
+}

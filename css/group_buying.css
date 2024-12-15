@@ -1,0 +1,186 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* 页面头部样式 */
+.header {
+    background-color: #9ACD32;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* 团购导航栏样式 */
+.group-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.group-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.group-nav ul li {
+    padding: 0 15px;
+}
+
+.group-nav ul li a {
+    text-decoration: none;
+    color: #9ACD32;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.group-nav ul li a:hover {
+    text-decoration: underline;
+    color: #6B8E23;
+}
+
+/* 团购商品与服务展示区样式 */
+.group-buying-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#time-left {
+    font-size: 20px;
+    color: #9ACD32;
+}
+
+#time-left2 {
+    font-size: 20px;
+    color: #9ACD32;
+}
+
+
+#time-left3 {
+    font-size: 20px;
+    color: #9ACD32;
+}
+
+
+.item {
+    width: 300px;
+    border: 1px solid #9ACD32;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item .price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.item .group-price {
+    color: #9ACD32;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item .group-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.item .group-count {
+    color: #9ACD32;
+    font-weight: bold;
+}
+
+/* 团购说明区样式 */
+.group-buying-explanation {
+    padding: 20px;
+    border-top: 1px solid #9ACD32;
+    border-bottom: 1px solid #9ACD32;
+    margin: 20px 0;
+}
+
+.group-buying-explanation h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #9ACD32;
+}
+
+.group-buying-explanation ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.group-buying-explanation ul li {
+    margin-bottom: 5px;
+}
+
+/* 页面底部样式 */
+.footer {
+    background-color: #9ACD32;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .mod_service ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .mod_service ul li {
+    text-align: center;
+}
+
+.footer .mod_service ul li h5 {
+    margin-bottom: 5px;
+}
+
+.footer .mod_copyright .links {
+    margin-bottom: 10px;
+}
